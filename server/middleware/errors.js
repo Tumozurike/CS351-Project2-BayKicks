@@ -1,0 +1,1 @@
+export function errors(err,req,res,next){console.error(err);if(err.code===11000)return res.status(409).json({error:'Username or email already exists.'});if(err.name==='CastError')return res.status(400).json({error:'Invalid identifier.'});res.status(500).json({error:'Server error. Please try again.'});}

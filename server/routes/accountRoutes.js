@@ -1,0 +1,1 @@
+import {Router} from 'express';import {register,login,logout,getAccount,updateAccount} from '../controllers/accountController.js';import {requireAuth} from '../middleware/auth.js';const r=Router();r.post('/accounts',register);r.post('/login',login);r.post('/logout',logout);r.get('/account',requireAuth,getAccount);r.put('/account',requireAuth,updateAccount);export default r;

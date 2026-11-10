@@ -1,0 +1,1 @@
+import React from'react';import ProductCard from'./ProductCard';export default function ProductList({products,open}){return <div className="row g-4">{products.map(p=><ProductCard key={p.id} product={p} open={open}/>)}</div>}

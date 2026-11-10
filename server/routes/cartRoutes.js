@@ -1,0 +1,1 @@
+import {Router} from 'express';import {showCart,addCart,changeCart,removeCart} from '../controllers/cartController.js';const r=Router();r.get('/',showCart);r.post('/',addCart);r.put('/:itemId',changeCart);r.delete('/:itemId',removeCart);export default r;

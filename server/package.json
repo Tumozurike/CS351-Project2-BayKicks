@@ -1,0 +1,21 @@
+{
+  "name": "baykicks-server",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "express-session": "^1.18.2",
+    "connect-mongo": "^5.1.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.0",
+    "helmet": "^8.1.0"
+  }
+}

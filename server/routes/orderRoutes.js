@@ -1,0 +1,1 @@
+import {Router} from 'express';import {createOrder,listOrders,getOrder} from '../controllers/orderController.js';import {requireAuth} from '../middleware/auth.js';const r=Router();r.use(requireAuth);r.post('/',createOrder);r.get('/',listOrders);r.get('/:id',getOrder);export default r;
